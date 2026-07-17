@@ -1,0 +1,9 @@
+﻿kafka-python
+pyspark
+pymongo
+neo4j
+python-dotenv
+pydantic
+pytest
+jupyter
+jupyter-book
