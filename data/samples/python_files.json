@@ -1,0 +1,3851 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-22T11:08:40.844922Z",
+  "repository": "huggingface/diffusers",
+  "commit_hash": "b48d49d87b97753bab3921bf3b7db52e8f1d3c49",
+  "source_root": "src/diffusers",
+  "total_files": 960,
+  "total_size_bytes": 24914617,
+  "files": [
+    {
+      "path": "src/diffusers/__init__.py",
+      "size_bytes": 65130
+    },
+    {
+      "path": "src/diffusers/callbacks.py",
+      "size_bytes": 10514
+    },
+    {
+      "path": "src/diffusers/commands/__init__.py",
+      "size_bytes": 947
+    },
+    {
+      "path": "src/diffusers/commands/custom_blocks.py",
+      "size_bytes": 5301
+    },
+    {
+      "path": "src/diffusers/commands/diffusers_cli.py",
+      "size_bytes": 1470
+    },
+    {
+      "path": "src/diffusers/commands/env.py",
+      "size_bytes": 6580
+    },
+    {
+      "path": "src/diffusers/commands/fp16_safetensors.py",
+      "size_bytes": 5551
+    },
+    {
+      "path": "src/diffusers/configuration_utils.py",
+      "size_bytes": 35011
+    },
+    {
+      "path": "src/diffusers/dependency_versions_check.py",
+      "size_bytes": 1305
+    },
+    {
+      "path": "src/diffusers/dependency_versions_table.py",
+      "size_bytes": 1934
+    },
+    {
+      "path": "src/diffusers/experimental/__init__.py",
+      "size_bytes": 39
+    },
+    {
+      "path": "src/diffusers/experimental/rl/__init__.py",
+      "size_bytes": 58
+    },
+    {
+      "path": "src/diffusers/experimental/rl/value_guided_sampling.py",
+      "size_bytes": 6186
+    },
+    {
+      "path": "src/diffusers/guiders/__init__.py",
+      "size_bytes": 1515
+    },
+    {
+      "path": "src/diffusers/guiders/adaptive_projected_guidance.py",
+      "size_bytes": 10848
+    },
+    {
+      "path": "src/diffusers/guiders/adaptive_projected_guidance_mix.py",
+      "size_bytes": 12764
+    },
+    {
+      "path": "src/diffusers/guiders/auto_guidance.py",
+      "size_bytes": 9561
+    },
+    {
+      "path": "src/diffusers/guiders/classifier_free_guidance.py",
+      "size_bytes": 6504
+    },
+    {
+      "path": "src/diffusers/guiders/classifier_free_zero_star_guidance.py",
+      "size_bytes": 7261
+    },
+    {
+      "path": "src/diffusers/guiders/frequency_decoupled_guidance.py",
+      "size_bytes": 17688
+    },
+    {
+      "path": "src/diffusers/guiders/guider_utils.py",
+      "size_bytes": 18441
+    },
+    {
+      "path": "src/diffusers/guiders/magnitude_aware_guidance.py",
+      "size_bytes": 6572
+    },
+    {
+      "path": "src/diffusers/guiders/perturbed_attention_guidance.py",
+      "size_bytes": 14484
+    },
+    {
+      "path": "src/diffusers/guiders/skip_layer_guidance.py",
+      "size_bytes": 14027
+    },
+    {
+      "path": "src/diffusers/guiders/smoothed_energy_guidance.py",
+      "size_bytes": 13549
+    },
+    {
+      "path": "src/diffusers/guiders/tangential_classifier_free_guidance.py",
+      "size_bytes": 6323
+    },
+    {
+      "path": "src/diffusers/hooks/__init__.py",
+      "size_bytes": 1563
+    },
+    {
+      "path": "src/diffusers/hooks/_common.py",
+      "size_bytes": 2223
+    },
+    {
+      "path": "src/diffusers/hooks/_helpers.py",
+      "size_bytes": 15184
+    },
+    {
+      "path": "src/diffusers/hooks/context_parallel.py",
+      "size_bytes": 16883
+    },
+    {
+      "path": "src/diffusers/hooks/faster_cache.py",
+      "size_bytes": 35684
+    },
+    {
+      "path": "src/diffusers/hooks/first_block_cache.py",
+      "size_bytes": 11528
+    },
+    {
+      "path": "src/diffusers/hooks/group_offloading.py",
+      "size_bytes": 51947
+    },
+    {
+      "path": "src/diffusers/hooks/hooks.py",
+      "size_bytes": 12223
+    },
+    {
+      "path": "src/diffusers/hooks/layer_skip.py",
+      "size_bytes": 12182
+    },
+    {
+      "path": "src/diffusers/hooks/layerwise_casting.py",
+      "size_bytes": 10660
+    },
+    {
+      "path": "src/diffusers/hooks/mag_cache.py",
+      "size_bytes": 18989
+    },
+    {
+      "path": "src/diffusers/hooks/pyramid_attention_broadcast.py",
+      "size_bytes": 15854
+    },
+    {
+      "path": "src/diffusers/hooks/smoothed_energy_guidance_utils.py",
+      "size_bytes": 7557
+    },
+    {
+      "path": "src/diffusers/hooks/taylorseer_cache.py",
+      "size_bytes": 14500
+    },
+    {
+      "path": "src/diffusers/hooks/text_kv_cache.py",
+      "size_bytes": 6561
+    },
+    {
+      "path": "src/diffusers/hooks/utils.py",
+      "size_bytes": 1891
+    },
+    {
+      "path": "src/diffusers/image_processor.py",
+      "size_bytes": 59865
+    },
+    {
+      "path": "src/diffusers/loaders/__init__.py",
+      "size_bytes": 6529
+    },
+    {
+      "path": "src/diffusers/loaders/ip_adapter.py",
+      "size_bytes": 58896
+    },
+    {
+      "path": "src/diffusers/loaders/lora_base.py",
+      "size_bytes": 47358
+    },
+    {
+      "path": "src/diffusers/loaders/lora_conversion_utils.py",
+      "size_bytes": 153108
+    },
+    {
+      "path": "src/diffusers/loaders/lora_pipeline.py",
+      "size_bytes": 307346
+    },
+    {
+      "path": "src/diffusers/loaders/peft.py",
+      "size_bytes": 39590
+    },
+    {
+      "path": "src/diffusers/loaders/single_file.py",
+      "size_bytes": 25666
+    },
+    {
+      "path": "src/diffusers/loaders/single_file_model.py",
+      "size_bytes": 25517
+    },
+    {
+      "path": "src/diffusers/loaders/single_file_utils.py",
+      "size_bytes": 191752
+    },
+    {
+      "path": "src/diffusers/loaders/textual_inversion.py",
+      "size_bytes": 28370
+    },
+    {
+      "path": "src/diffusers/loaders/transformer_flux.py",
+      "size_bytes": 8200
+    },
+    {
+      "path": "src/diffusers/loaders/transformer_sd3.py",
+      "size_bytes": 8786
+    },
+    {
+      "path": "src/diffusers/loaders/unet.py",
+      "size_bytes": 38018
+    },
+    {
+      "path": "src/diffusers/loaders/unet_loader_utils.py",
+      "size_bytes": 6392
+    },
+    {
+      "path": "src/diffusers/loaders/utils.py",
+      "size_bytes": 2457
+    },
+    {
+      "path": "src/diffusers/models/__init__.py",
+      "size_bytes": 17366
+    },
+    {
+      "path": "src/diffusers/models/_modeling_parallel.py",
+      "size_bytes": 15257
+    },
+    {
+      "path": "src/diffusers/models/activations.py",
+      "size_bytes": 6689
+    },
+    {
+      "path": "src/diffusers/models/adapter.py",
+      "size_bytes": 25582
+    },
+    {
+      "path": "src/diffusers/models/attention.py",
+      "size_bytes": 75438
+    },
+    {
+      "path": "src/diffusers/models/attention_dispatch.py",
+      "size_bytes": 151762
+    },
+    {
+      "path": "src/diffusers/models/attention_processor.py",
+      "size_bytes": 245001
+    },
+    {
+      "path": "src/diffusers/models/auto_model.py",
+      "size_bytes": 18074
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/__init__.py",
+      "size_bytes": 1669
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_asym_kl.py",
+      "size_bytes": 8237
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_cosmos3_audio.py",
+      "size_bytes": 28971
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_dc.py",
+      "size_bytes": 31497
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl.py",
+      "size_bytes": 22054
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_allegro.py",
+      "size_bytes": 45286
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_cogvideox.py",
+      "size_bytes": 61684
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_cosmos.py",
+      "size_bytes": 54768
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_flux2.py",
+      "size_bytes": 21888
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_hunyuan_video.py",
+      "size_bytes": 46045
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_hunyuanimage.py",
+      "size_bytes": 27008
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_hunyuanimage_refiner.py",
+      "size_bytes": 38112
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_hunyuanvideo15.py",
+      "size_bytes": 38891
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_kvae.py",
+      "size_bytes": 30959
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_kvae_video.py",
+      "size_bytes": 37076
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_ltx.py",
+      "size_bytes": 65940
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_ltx2.py",
+      "size_bytes": 68851
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_ltx2_audio.py",
+      "size_bytes": 32349
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_magvit.py",
+      "size_bytes": 45702
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_mochi.py",
+      "size_bytes": 47776
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_qwenimage.py",
+      "size_bytes": 43297
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_temporal_decoder.py",
+      "size_bytes": 12867
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_wan.py",
+      "size_bytes": 55701
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_longcat_audio_dit.py",
+      "size_bytes": 16455
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_oobleck.py",
+      "size_bytes": 21552
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_rae.py",
+      "size_bytes": 30116
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_tiny.py",
+      "size_bytes": 15117
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_vidtok.py",
+      "size_bytes": 65995
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/consistency_decoder_vae.py",
+      "size_bytes": 15808
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/vae.py",
+      "size_bytes": 34917
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/vq_model.py",
+      "size_bytes": 8076
+    },
+    {
+      "path": "src/diffusers/models/cache_utils.py",
+      "size_bytes": 7039
+    },
+    {
+      "path": "src/diffusers/models/condition_embedders/__init__.py",
+      "size_bytes": 135
+    },
+    {
+      "path": "src/diffusers/models/condition_embedders/condition_embedder_anima.py",
+      "size_bytes": 14959
+    },
+    {
+      "path": "src/diffusers/models/controlnets/__init__.py",
+      "size_bytes": 1195
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet.py",
+      "size_bytes": 41112
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_cosmos.py",
+      "size_bytes": 13387
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_flux.py",
+      "size_bytes": 22141
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_hunyuan.py",
+      "size_bytes": 17268
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_qwenimage.py",
+      "size_bytes": 16058
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_sana.py",
+      "size_bytes": 10907
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_sd3.py",
+      "size_bytes": 21495
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_sparsectrl.py",
+      "size_bytes": 36009
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_union.py",
+      "size_bytes": 39532
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_xs.py",
+      "size_bytes": 84021
+    },
+    {
+      "path": "src/diffusers/models/controlnets/controlnet_z_image.py",
+      "size_bytes": 36134
+    },
+    {
+      "path": "src/diffusers/models/controlnets/multicontrolnet.py",
+      "size_bytes": 11231
+    },
+    {
+      "path": "src/diffusers/models/controlnets/multicontrolnet_union.py",
+      "size_bytes": 12392
+    },
+    {
+      "path": "src/diffusers/models/downsampling.py",
+      "size_bytes": 16230
+    },
+    {
+      "path": "src/diffusers/models/embeddings.py",
+      "size_bytes": 106855
+    },
+    {
+      "path": "src/diffusers/models/lora.py",
+      "size_bytes": 19216
+    },
+    {
+      "path": "src/diffusers/models/model_loading_utils.py",
+      "size_bytes": 31220
+    },
+    {
+      "path": "src/diffusers/models/modeling_outputs.py",
+      "size_bytes": 1073
+    },
+    {
+      "path": "src/diffusers/models/modeling_utils.py",
+      "size_bytes": 102004
+    },
+    {
+      "path": "src/diffusers/models/normalization.py",
+      "size_bytes": 25165
+    },
+    {
+      "path": "src/diffusers/models/resnet.py",
+      "size_bytes": 33313
+    },
+    {
+      "path": "src/diffusers/models/transformers/__init__.py",
+      "size_bytes": 4236
+    },
+    {
+      "path": "src/diffusers/models/transformers/ace_step_transformer.py",
+      "size_bytes": 28394
+    },
+    {
+      "path": "src/diffusers/models/transformers/auraflow_transformer_2d.py",
+      "size_bytes": 21720
+    },
+    {
+      "path": "src/diffusers/models/transformers/cogvideox_transformer_3d.py",
+      "size_bytes": 21543
+    },
+    {
+      "path": "src/diffusers/models/transformers/consisid_transformer_3d.py",
+      "size_bytes": 35274
+    },
+    {
+      "path": "src/diffusers/models/transformers/dit_transformer_2d.py",
+      "size_bytes": 10742
+    },
+    {
+      "path": "src/diffusers/models/transformers/dual_transformer_2d.py",
+      "size_bytes": 7821
+    },
+    {
+      "path": "src/diffusers/models/transformers/hunyuan_transformer_2d.py",
+      "size_bytes": 22118
+    },
+    {
+      "path": "src/diffusers/models/transformers/latte_transformer_3d.py",
+      "size_bytes": 15982
+    },
+    {
+      "path": "src/diffusers/models/transformers/lumina_nextdit2d.py",
+      "size_bytes": 15761
+    },
+    {
+      "path": "src/diffusers/models/transformers/pixart_transformer_2d.py",
+      "size_bytes": 18434
+    },
+    {
+      "path": "src/diffusers/models/transformers/prior_transformer.py",
+      "size_bytes": 14962
+    },
+    {
+      "path": "src/diffusers/models/transformers/sana_transformer.py",
+      "size_bytes": 24035
+    },
+    {
+      "path": "src/diffusers/models/transformers/stable_audio_transformer.py",
+      "size_bytes": 16174
+    },
+    {
+      "path": "src/diffusers/models/transformers/t5_film_transformer.py",
+      "size_bytes": 17047
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_2d.py",
+      "size_bytes": 28801
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_2d_dreamlite.py",
+      "size_bytes": 27579
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_allegro.py",
+      "size_bytes": 18905
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_anyflow.py",
+      "size_bytes": 31418
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_anyflow_far.py",
+      "size_bytes": 74424
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_bria.py",
+      "size_bytes": 30943
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_bria_fibo.py",
+      "size_bytes": 28073
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_chroma.py",
+      "size_bytes": 27562
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_chronoedit.py",
+      "size_bytes": 32868
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_cogview3plus.py",
+      "size_bytes": 13359
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_cogview4.py",
+      "size_bytes": 36637
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_cosmos.py",
+      "size_bytes": 36958
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_cosmos3.py",
+      "size_bytes": 41880
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_easyanimate.py",
+      "size_bytes": 24103
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_ernie_image.py",
+      "size_bytes": 19130
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_flux.py",
+      "size_bytes": 34221
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_flux2.py",
+      "size_bytes": 57613
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_glm_image.py",
+      "size_bytes": 30258
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_helios.py",
+      "size_bytes": 37674
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_hidream_image.py",
+      "size_bytes": 41619
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_hunyuan_video.py",
+      "size_bytes": 46978
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_hunyuan_video15.py",
+      "size_bytes": 33556
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_hunyuan_video_framepack.py",
+      "size_bytes": 21094
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_hunyuanimage.py",
+      "size_bytes": 38926
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_ideogram4.py",
+      "size_bytes": 20705
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_joyimage.py",
+      "size_bytes": 24109
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_joyimage_edit_plus.py",
+      "size_bytes": 22216
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_kandinsky.py",
+      "size_bytes": 25344
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_krea2.py",
+      "size_bytes": 24418
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_longcat_audio_dit.py",
+      "size_bytes": 26576
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_longcat_image.py",
+      "size_bytes": 23001
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_ltx.py",
+      "size_bytes": 24814
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_ltx2.py",
+      "size_bytes": 79607
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_lumina2.py",
+      "size_bytes": 23227
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_mochi.py",
+      "size_bytes": 19596
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_motif_video.py",
+      "size_bytes": 42667
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_nucleusmoe_image.py",
+      "size_bytes": 40520
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_omnigen.py",
+      "size_bytes": 21914
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_ovis_image.py",
+      "size_bytes": 25032
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_prx.py",
+      "size_bytes": 35275
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_qwenimage.py",
+      "size_bytes": 45027
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_sana_video.py",
+      "size_bytes": 30670
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_sd3.py",
+      "size_bytes": 16062
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_skyreels_v2.py",
+      "size_bytes": 34512
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_temporal.py",
+      "size_bytes": 17132
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_wan.py",
+      "size_bytes": 31809
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_wan_animate.py",
+      "size_bytes": 55276
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_wan_vace.py",
+      "size_bytes": 18021
+    },
+    {
+      "path": "src/diffusers/models/transformers/transformer_z_image.py",
+      "size_bytes": 44897
+    },
+    {
+      "path": "src/diffusers/models/unets/__init__.py",
+      "size_bytes": 651
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_1d.py",
+      "size_bytes": 11596
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_1d_blocks.py",
+      "size_bytes": 27385
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_2d.py",
+      "size_bytes": 17172
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_2d_blocks.py",
+      "size_bytes": 144963
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_2d_condition.py",
+      "size_bytes": 64724
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_3d_blocks.py",
+      "size_bytes": 52881
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_3d_condition.py",
+      "size_bytes": 32039
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_dreamlite.py",
+      "size_bytes": 84091
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_i2vgen_xl.py",
+      "size_bytes": 30449
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_kandinsky3.py",
+      "size_bytes": 19193
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_motion_model.py",
+      "size_bytes": 98463
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_spatio_temporal_condition.py",
+      "size_bytes": 20966
+    },
+    {
+      "path": "src/diffusers/models/unets/unet_stable_cascade.py",
+      "size_bytes": 28979
+    },
+    {
+      "path": "src/diffusers/models/unets/uvit_2d.py",
+      "size_bytes": 15711
+    },
+    {
+      "path": "src/diffusers/models/upsampling.py",
+      "size_bytes": 20083
+    },
+    {
+      "path": "src/diffusers/models/vq_model.py",
+      "size_bytes": 1553
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/__init__.py",
+      "size_bytes": 7221
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/__init__.py",
+      "size_bytes": 1483
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/before_denoise.py",
+      "size_bytes": 29183
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/decoders.py",
+      "size_bytes": 4339
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/denoise.py",
+      "size_bytes": 8623
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/encoders.py",
+      "size_bytes": 16260
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/modular_blocks_anima.py",
+      "size_bytes": 16358
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/anima/modular_pipeline.py",
+      "size_bytes": 1734
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/components_manager.py",
+      "size_bytes": 48452
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/__init__.py",
+      "size_bytes": 1737
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/after_decode.py",
+      "size_bytes": 4658
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/before_denoise.py",
+      "size_bytes": 56717
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/before_encoder.py",
+      "size_bytes": 7835
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/decoders.py",
+      "size_bytes": 10853
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/denoise.py",
+      "size_bytes": 36700
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/encoders.py",
+      "size_bytes": 47066
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/modular_blocks_cosmos3.py",
+      "size_bytes": 56608
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/modular_blocks_cosmos3_distilled.py",
+      "size_bytes": 9998
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/cosmos/modular_pipeline.py",
+      "size_bytes": 5230
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/__init__.py",
+      "size_bytes": 1515
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/before_denoise.py",
+      "size_bytes": 11426
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/decoders.py",
+      "size_bytes": 3570
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/denoise.py",
+      "size_bytes": 9150
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/encoders.py",
+      "size_bytes": 10099
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/modular_blocks_ernie_image.py",
+      "size_bytes": 8055
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ernie_image/modular_pipeline.py",
+      "size_bytes": 3994
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/__init__.py",
+      "size_bytes": 1689
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/before_denoise.py",
+      "size_bytes": 25350
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/decoders.py",
+      "size_bytes": 3995
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/denoise.py",
+      "size_bytes": 12366
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/encoders.py",
+      "size_bytes": 19840
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/inputs.py",
+      "size_bytes": 15528
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/modular_blocks_flux.py",
+      "size_bytes": 23130
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/modular_blocks_flux_kontext.py",
+      "size_bytes": 23738
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux/modular_pipeline.py",
+      "size_bytes": 2200
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/__init__.py",
+      "size_bytes": 2082
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/before_denoise.py",
+      "size_bytes": 22829
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/decoders.py",
+      "size_bytes": 6509
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/denoise.py",
+      "size_bytes": 19248
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/encoders.py",
+      "size_bytes": 22970
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/inputs.py",
+      "size_bytes": 9374
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/modular_blocks_flux2.py",
+      "size_bytes": 12712
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/modular_blocks_flux2_klein.py",
+      "size_bytes": 14375
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/modular_blocks_flux2_klein_base.py",
+      "size_bytes": 15333
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/flux2/modular_pipeline.py",
+      "size_bytes": 3309
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/__init__.py",
+      "size_bytes": 2081
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/before_denoise.py",
+      "size_bytes": 34693
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/decoders.py",
+      "size_bytes": 4272
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/denoise.py",
+      "size_bytes": 44535
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/encoders.py",
+      "size_bytes": 15361
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/modular_blocks_helios.py",
+      "size_bytes": 24516
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/modular_blocks_helios_pyramid.py",
+      "size_bytes": 23746
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/modular_blocks_helios_pyramid_distilled.py",
+      "size_bytes": 24772
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/helios/modular_pipeline.py",
+      "size_bytes": 3025
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/__init__.py",
+      "size_bytes": 1558
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/before_denoise.py",
+      "size_bytes": 13748
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/decoders.py",
+      "size_bytes": 2573
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/denoise.py",
+      "size_bytes": 16408
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/encoders.py",
+      "size_bytes": 16943
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/modular_blocks_hunyuan_video1_5.py",
+      "size_bytes": 24195
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/hunyuan_video1_5/modular_pipeline.py",
+      "size_bytes": 3053
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/__init__.py",
+      "size_bytes": 1507
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/before_denoise.py",
+      "size_bytes": 23763
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/decoders.py",
+      "size_bytes": 4508
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/denoise.py",
+      "size_bytes": 14926
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/encoders.py",
+      "size_bytes": 14716
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/modular_blocks_ideogram4.py",
+      "size_bytes": 8481
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ideogram4/modular_pipeline.py",
+      "size_bytes": 1515
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/__init__.py",
+      "size_bytes": 1541
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/before_denoise.py",
+      "size_bytes": 16482
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/decoders.py",
+      "size_bytes": 5535
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/denoise.py",
+      "size_bytes": 18619
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/encoders.py",
+      "size_bytes": 10358
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/modular_blocks_ltx.py",
+      "size_bytes": 20728
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/ltx/modular_pipeline.py",
+      "size_bytes": 3288
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/mellon_node_utils.py",
+      "size_bytes": 42161
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/modular_pipeline.py",
+      "size_bytes": 130365
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/modular_pipeline_utils.py",
+      "size_bytes": 55006
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/__init__.py",
+      "size_bytes": 2333
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/before_denoise.py",
+      "size_bytes": 53935
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/decoders.py",
+      "size_bytes": 17557
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/denoise.py",
+      "size_bytes": 40345
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/encoders.py",
+      "size_bytes": 66197
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/inputs.py",
+      "size_bytes": 44928
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/modular_blocks_qwenimage.py",
+      "size_bytes": 52848
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/modular_blocks_qwenimage_edit.py",
+      "size_bytes": 32209
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/modular_blocks_qwenimage_edit_plus.py",
+      "size_bytes": 16182
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/modular_blocks_qwenimage_layered.py",
+      "size_bytes": 14884
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/modular_pipeline.py",
+      "size_bytes": 10362
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/qwenimage/prompt_templates.py",
+      "size_bytes": 6180
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/__init__.py",
+      "size_bytes": 1553
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/before_denoise.py",
+      "size_bytes": 17397
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/decoders.py",
+      "size_bytes": 2913
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/denoise.py",
+      "size_bytes": 8362
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/encoders.py",
+      "size_bytes": 22027
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/inputs.py",
+      "size_bytes": 13396
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/modular_blocks_stable_diffusion_3.py",
+      "size_bytes": 15336
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_3/modular_pipeline.py",
+      "size_bytes": 2372
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/__init__.py",
+      "size_bytes": 1559
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/before_denoise.py",
+      "size_bytes": 87846
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/decoders.py",
+      "size_bytes": 7961
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/denoise.py",
+      "size_bytes": 36419
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/encoders.py",
+      "size_bytes": 42093
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/modular_blocks_stable_diffusion_xl.py",
+      "size_bytes": 25648
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/stable_diffusion_xl/modular_pipeline.py",
+      "size_bytes": 15872
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/__init__.py",
+      "size_bytes": 2171
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/before_denoise.py",
+      "size_bytes": 24731
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/decoders.py",
+      "size_bytes": 3580
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/denoise.py",
+      "size_bytes": 22771
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/encoders.py",
+      "size_bytes": 29169
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/modular_blocks_wan.py",
+      "size_bytes": 5492
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/modular_blocks_wan22.py",
+      "size_bytes": 6046
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/modular_blocks_wan22_i2v.py",
+      "size_bytes": 8283
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/modular_blocks_wan_i2v.py",
+      "size_bytes": 17860
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/wan/modular_pipeline.py",
+      "size_bytes": 4528
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/__init__.py",
+      "size_bytes": 1491
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/before_denoise.py",
+      "size_bytes": 27201
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/decoders.py",
+      "size_bytes": 3163
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/denoise.py",
+      "size_bytes": 12948
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/encoders.py",
+      "size_bytes": 12822
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/modular_blocks_z_image.py",
+      "size_bytes": 12821
+    },
+    {
+      "path": "src/diffusers/modular_pipelines/z_image/modular_pipeline.py",
+      "size_bytes": 2427
+    },
+    {
+      "path": "src/diffusers/optimization.py",
+      "size_bytes": 15481
+    },
+    {
+      "path": "src/diffusers/pipelines/__init__.py",
+      "size_bytes": 37897
+    },
+    {
+      "path": "src/diffusers/pipelines/ace_step/__init__.py",
+      "size_bytes": 1726
+    },
+    {
+      "path": "src/diffusers/pipelines/ace_step/modeling_ace_step.py",
+      "size_bytes": 36280
+    },
+    {
+      "path": "src/diffusers/pipelines/ace_step/pipeline_ace_step.py",
+      "size_bytes": 64089
+    },
+    {
+      "path": "src/diffusers/pipelines/allegro/__init__.py",
+      "size_bytes": 1338
+    },
+    {
+      "path": "src/diffusers/pipelines/allegro/pipeline_allegro.py",
+      "size_bytes": 44164
+    },
+    {
+      "path": "src/diffusers/pipelines/allegro/pipeline_output.py",
+      "size_bytes": 708
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/__init__.py",
+      "size_bytes": 2381
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff.py",
+      "size_bytes": 43274
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff_controlnet.py",
+      "size_bytes": 57191
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff_sdxl.py",
+      "size_bytes": 67921
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff_sparsectrl.py",
+      "size_bytes": 52830
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff_video2video.py",
+      "size_bytes": 53678
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_animatediff_video2video_controlnet.py",
+      "size_bytes": 69286
+    },
+    {
+      "path": "src/diffusers/pipelines/animatediff/pipeline_output.py",
+      "size_bytes": 716
+    },
+    {
+      "path": "src/diffusers/pipelines/anyflow/__init__.py",
+      "size_bytes": 1468
+    },
+    {
+      "path": "src/diffusers/pipelines/anyflow/pipeline_anyflow.py",
+      "size_bytes": 31113
+    },
+    {
+      "path": "src/diffusers/pipelines/anyflow/pipeline_anyflow_far.py",
+      "size_bytes": 39462
+    },
+    {
+      "path": "src/diffusers/pipelines/anyflow/pipeline_output.py",
+      "size_bytes": 1283
+    },
+    {
+      "path": "src/diffusers/pipelines/audioldm2/__init__.py",
+      "size_bytes": 1655
+    },
+    {
+      "path": "src/diffusers/pipelines/audioldm2/modeling_audioldm2.py",
+      "size_bytes": 68903
+    },
+    {
+      "path": "src/diffusers/pipelines/audioldm2/pipeline_audioldm2.py",
+      "size_bytes": 55733
+    },
+    {
+      "path": "src/diffusers/pipelines/aura_flow/__init__.py",
+      "size_bytes": 1344
+    },
+    {
+      "path": "src/diffusers/pipelines/aura_flow/pipeline_aura_flow.py",
+      "size_bytes": 33370
+    },
+    {
+      "path": "src/diffusers/pipelines/auto_pipeline.py",
+      "size_bytes": 75701
+    },
+    {
+      "path": "src/diffusers/pipelines/bria/__init__.py",
+      "size_bytes": 1326
+    },
+    {
+      "path": "src/diffusers/pipelines/bria/pipeline_bria.py",
+      "size_bytes": 35895
+    },
+    {
+      "path": "src/diffusers/pipelines/bria/pipeline_output.py",
+      "size_bytes": 569
+    },
+    {
+      "path": "src/diffusers/pipelines/bria_fibo/__init__.py",
+      "size_bytes": 1490
+    },
+    {
+      "path": "src/diffusers/pipelines/bria_fibo/pipeline_bria_fibo.py",
+      "size_bytes": 35471
+    },
+    {
+      "path": "src/diffusers/pipelines/bria_fibo/pipeline_bria_fibo_edit.py",
+      "size_bytes": 47304
+    },
+    {
+      "path": "src/diffusers/pipelines/bria_fibo/pipeline_output.py",
+      "size_bytes": 576
+    },
+    {
+      "path": "src/diffusers/pipelines/chroma/__init__.py",
+      "size_bytes": 1812
+    },
+    {
+      "path": "src/diffusers/pipelines/chroma/pipeline_chroma.py",
+      "size_bytes": 44531
+    },
+    {
+      "path": "src/diffusers/pipelines/chroma/pipeline_chroma_img2img.py",
+      "size_bytes": 48962
+    },
+    {
+      "path": "src/diffusers/pipelines/chroma/pipeline_chroma_inpainting.py",
+      "size_bytes": 58557
+    },
+    {
+      "path": "src/diffusers/pipelines/chroma/pipeline_output.py",
+      "size_bytes": 583
+    },
+    {
+      "path": "src/diffusers/pipelines/chronoedit/__init__.py",
+      "size_bytes": 1348
+    },
+    {
+      "path": "src/diffusers/pipelines/chronoedit/pipeline_chronoedit.py",
+      "size_bytes": 36751
+    },
+    {
+      "path": "src/diffusers/pipelines/chronoedit/pipeline_output.py",
+      "size_bytes": 639
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/__init__.py",
+      "size_bytes": 1870
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/pipeline_cogvideox.py",
+      "size_bytes": 38951
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/pipeline_cogvideox_fun_control.py",
+      "size_bytes": 41562
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/pipeline_cogvideox_image2video.py",
+      "size_bytes": 44040
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/pipeline_cogvideox_video2video.py",
+      "size_bytes": 42627
+    },
+    {
+      "path": "src/diffusers/pipelines/cogvideo/pipeline_output.py",
+      "size_bytes": 636
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview3/__init__.py",
+      "size_bytes": 1544
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview3/pipeline_cogview3plus.py",
+      "size_bytes": 34429
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview3/pipeline_output.py",
+      "size_bytes": 577
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview4/__init__.py",
+      "size_bytes": 1682
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview4/pipeline_cogview4.py",
+      "size_bytes": 34489
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview4/pipeline_cogview4_control.py",
+      "size_bytes": 36485
+    },
+    {
+      "path": "src/diffusers/pipelines/cogview4/pipeline_output.py",
+      "size_bytes": 577
+    },
+    {
+      "path": "src/diffusers/pipelines/consisid/__init__.py",
+      "size_bytes": 1416
+    },
+    {
+      "path": "src/diffusers/pipelines/consisid/consisid_utils.py",
+      "size_bytes": 14949
+    },
+    {
+      "path": "src/diffusers/pipelines/consisid/pipeline_consisid.py",
+      "size_bytes": 47742
+    },
+    {
+      "path": "src/diffusers/pipelines/consisid/pipeline_output.py",
+      "size_bytes": 635
+    },
+    {
+      "path": "src/diffusers/pipelines/consistency_models/__init__.py",
+      "size_bytes": 508
+    },
+    {
+      "path": "src/diffusers/pipelines/consistency_models/pipeline_consistency_models.py",
+      "size_bytes": 12812
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/__init__.py",
+      "size_bytes": 3334
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/multicontrolnet.py",
+      "size_bytes": 696
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet.py",
+      "size_bytes": 70143
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_blip_diffusion.py",
+      "size_bytes": 18291
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_img2img.py",
+      "size_bytes": 68771
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_inpaint.py",
+      "size_bytes": 78009
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_inpaint_sd_xl.py",
+      "size_bytes": 98482
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_sd_xl.py",
+      "size_bytes": 83861
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_sd_xl_img2img.py",
+      "size_bytes": 88330
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_union_inpaint_sd_xl.py",
+      "size_bytes": 99196
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_union_sd_xl.py",
+      "size_bytes": 84515
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet/pipeline_controlnet_union_sd_xl_img2img.py",
+      "size_bytes": 89908
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet_hunyuandit/__init__.py",
+      "size_bytes": 1392
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet_hunyuandit/pipeline_hunyuandit_controlnet.py",
+      "size_bytes": 51819
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet_sd3/__init__.py",
+      "size_bytes": 1676
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet_sd3/pipeline_stable_diffusion_3_controlnet.py",
+      "size_bytes": 63992
+    },
+    {
+      "path": "src/diffusers/pipelines/controlnet_sd3/pipeline_stable_diffusion_3_controlnet_inpainting.py",
+      "size_bytes": 72040
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/__init__.py",
+      "size_bytes": 2519
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos2_5_predict.py",
+      "size_bytes": 44789
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos2_5_transfer.py",
+      "size_bytes": 52215
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos2_text2image.py",
+      "size_bytes": 34716
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos2_video2world.py",
+      "size_bytes": 40896
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos3_omni.py",
+      "size_bytes": 96219
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos_text2world.py",
+      "size_bytes": 33384
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_cosmos_video2world.py",
+      "size_bytes": 42543
+    },
+    {
+      "path": "src/diffusers/pipelines/cosmos/pipeline_output.py",
+      "size_bytes": 1216
+    },
+    {
+      "path": "src/diffusers/pipelines/ddim/__init__.py",
+      "size_bytes": 429
+    },
+    {
+      "path": "src/diffusers/pipelines/ddim/pipeline_ddim.py",
+      "size_bytes": 7391
+    },
+    {
+      "path": "src/diffusers/pipelines/ddpm/__init__.py",
+      "size_bytes": 447
+    },
+    {
+      "path": "src/diffusers/pipelines/ddpm/pipeline_ddpm.py",
+      "size_bytes": 5416
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/__init__.py",
+      "size_bytes": 3060
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if.py",
+      "size_bytes": 36291
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if_img2img.py",
+      "size_bytes": 40846
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if_img2img_superresolution.py",
+      "size_bytes": 45998
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if_inpainting.py",
+      "size_bytes": 46182
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if_inpainting_superresolution.py",
+      "size_bytes": 51124
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_if_superresolution.py",
+      "size_bytes": 40680
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/pipeline_output.py",
+      "size_bytes": 1120
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/safety_checker.py",
+      "size_bytes": 2176
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/timesteps.py",
+      "size_bytes": 5743
+    },
+    {
+      "path": "src/diffusers/pipelines/deepfloyd_if/watermark.py",
+      "size_bytes": 1620
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/__init__.py",
+      "size_bytes": 9474
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/alt_diffusion/__init__.py",
+      "size_bytes": 1836
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/alt_diffusion/modeling_roberta_series.py",
+      "size_bytes": 5576
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/alt_diffusion/pipeline_alt_diffusion.py",
+      "size_bytes": 51472
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/alt_diffusion/pipeline_alt_diffusion_img2img.py",
+      "size_bytes": 54247
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/alt_diffusion/pipeline_output.py",
+      "size_bytes": 905
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/amused/__init__.py",
+      "size_bytes": 1858
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/amused/pipeline_amused.py",
+      "size_bytes": 16267
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/amused/pipeline_amused_img2img.py",
+      "size_bytes": 17774
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/amused/pipeline_amused_inpaint.py",
+      "size_bytes": 19491
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/audio_diffusion/__init__.py",
+      "size_bytes": 530
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/audio_diffusion/mel.py",
+      "size_bytes": 5943
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/audio_diffusion/pipeline_audio_diffusion.py",
+      "size_bytes": 13485
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/audioldm/__init__.py",
+      "size_bytes": 1473
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/audioldm/pipeline_audioldm.py",
+      "size_bytes": 26846
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/blip_diffusion/__init__.py",
+      "size_bytes": 677
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/blip_diffusion/blip_image_processing.py",
+      "size_bytes": 16914
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/blip_diffusion/modeling_blip2.py",
+      "size_bytes": 27684
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/blip_diffusion/modeling_ctx_clip.py",
+      "size_bytes": 9120
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/blip_diffusion/pipeline_blip_diffusion.py",
+      "size_bytes": 15605
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/controlnet_xs/__init__.py",
+      "size_bytes": 1581
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/controlnet_xs/pipeline_controlnet_xs.py",
+      "size_bytes": 46858
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/controlnet_xs/pipeline_controlnet_xs_sd_xl.py",
+      "size_bytes": 57891
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/dance_diffusion/__init__.py",
+      "size_bytes": 472
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/dance_diffusion/pipeline_dance_diffusion.py",
+      "size_bytes": 6837
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/i2vgen_xl/__init__.py",
+      "size_bytes": 1356
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/i2vgen_xl/pipeline_i2vgen_xl.py",
+      "size_bytes": 38122
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/latent_diffusion_uncond/__init__.py",
+      "size_bytes": 466
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/latent_diffusion_uncond/pipeline_latent_diffusion_uncond.py",
+      "size_bytes": 5709
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/musicldm/__init__.py",
+      "size_bytes": 1463
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/musicldm/pipeline_musicldm.py",
+      "size_bytes": 31261
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/paint_by_example/__init__.py",
+      "size_bytes": 1601
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/paint_by_example/image_encoder.py",
+      "size_bytes": 2581
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/paint_by_example/pipeline_paint_by_example.py",
+      "size_bytes": 31885
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/pia/__init__.py",
+      "size_bytes": 1348
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/pia/pipeline_pia.py",
+      "size_bytes": 47504
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/pndm/__init__.py",
+      "size_bytes": 430
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/pndm/pipeline_pndm.py",
+      "size_bytes": 4714
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/repaint/__init__.py",
+      "size_bytes": 444
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/repaint/pipeline_repaint.py",
+      "size_bytes": 10234
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/score_sde_ve/__init__.py",
+      "size_bytes": 460
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/score_sde_ve/pipeline_score_sde_ve.py",
+      "size_bytes": 4663
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/semantic_stable_diffusion/__init__.py",
+      "size_bytes": 1495
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/semantic_stable_diffusion/pipeline_output.py",
+      "size_bytes": 797
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/semantic_stable_diffusion/pipeline_semantic_stable_diffusion.py",
+      "size_bytes": 39506
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/spectrogram_diffusion/__init__.py",
+      "size_bytes": 2663
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/spectrogram_diffusion/continuous_encoder.py",
+      "size_bytes": 3192
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/spectrogram_diffusion/midi_utils.py",
+      "size_bytes": 25713
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/spectrogram_diffusion/notes_encoder.py",
+      "size_bytes": 3009
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/spectrogram_diffusion/pipeline_spectrogram_diffusion.py",
+      "size_bytes": 11913
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_attend_and_excite/__init__.py",
+      "size_bytes": 1441
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_attend_and_excite/pipeline_stable_diffusion_attend_and_excite.py",
+      "size_bytes": 52583
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_diffedit/__init__.py",
+      "size_bytes": 1409
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_diffedit/pipeline_stable_diffusion_diffedit.py",
+      "size_bytes": 79837
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_gligen/__init__.py",
+      "size_bytes": 1621
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_gligen/pipeline_stable_diffusion_gligen.py",
+      "size_bytes": 43940
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_gligen/pipeline_stable_diffusion_gligen_text_image.py",
+      "size_bytes": 53050
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_ldm3d/__init__.py",
+      "size_bytes": 1397
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_ldm3d/pipeline_stable_diffusion_ldm3d.py",
+      "size_bytes": 53058
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_panorama/__init__.py",
+      "size_bytes": 1409
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_panorama/pipeline_stable_diffusion_panorama.py",
+      "size_bytes": 61473
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_safe/__init__.py",
+      "size_bytes": 2830
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_safe/pipeline_output.py",
+      "size_bytes": 1431
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_safe/pipeline_stable_diffusion_safe.py",
+      "size_bytes": 40185
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_safe/safety_checker.py",
+      "size_bytes": 5149
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_sag/__init__.py",
+      "size_bytes": 1389
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_sag/pipeline_stable_diffusion_sag.py",
+      "size_bytes": 48798
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/__init__.py",
+      "size_bytes": 2166
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_cycle_diffusion.py",
+      "size_bytes": 48835
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_onnx_stable_diffusion_inpaint_legacy.py",
+      "size_bytes": 28304
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_stable_diffusion_inpaint_legacy.py",
+      "size_bytes": 43277
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_stable_diffusion_model_editing.py",
+      "size_bytes": 42271
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_stable_diffusion_paradigms.py",
+      "size_bytes": 41982
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stable_diffusion_variants/pipeline_stable_diffusion_pix2pix_zero.py",
+      "size_bytes": 65055
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stochastic_karras_ve/__init__.py",
+      "size_bytes": 472
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/stochastic_karras_ve/pipeline_stochastic_karras_ve.py",
+      "size_bytes": 5336
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/__init__.py",
+      "size_bytes": 2036
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/pipeline_output.py",
+      "size_bytes": 725
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/pipeline_text_to_video_synth.py",
+      "size_bytes": 32203
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/pipeline_text_to_video_synth_img2img.py",
+      "size_bytes": 36071
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/pipeline_text_to_video_zero.py",
+      "size_bytes": 46648
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/text_to_video_synthesis/pipeline_text_to_video_zero_sdxl.py",
+      "size_bytes": 65728
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unclip/__init__.py",
+      "size_bytes": 1807
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unclip/pipeline_unclip.py",
+      "size_bytes": 22851
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unclip/pipeline_unclip_image_variation.py",
+      "size_bytes": 19726
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unclip/text_proj.py",
+      "size_bytes": 4374
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unidiffuser/__init__.py",
+      "size_bytes": 1875
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unidiffuser/modeling_text_decoder.py",
+      "size_bytes": 14363
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unidiffuser/modeling_uvit.py",
+      "size_bytes": 55383
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/unidiffuser/pipeline_unidiffuser.py",
+      "size_bytes": 68626
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/__init__.py",
+      "size_bytes": 2909
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/modeling_text_unet.py",
+      "size_bytes": 115107
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/pipeline_versatile_diffusion.py",
+      "size_bytes": 22200
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/pipeline_versatile_diffusion_dual_guided.py",
+      "size_bytes": 27842
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/pipeline_versatile_diffusion_image_variation.py",
+      "size_bytes": 20049
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/versatile_diffusion/pipeline_versatile_diffusion_text_to_image.py",
+      "size_bytes": 23330
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/vq_diffusion/__init__.py",
+      "size_bytes": 1707
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/vq_diffusion/pipeline_vq_diffusion.py",
+      "size_bytes": 15703
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/__init__.py",
+      "size_bytes": 2159
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/modeling_paella_vq_model.py",
+      "size_bytes": 7064
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/modeling_wuerstchen_common.py",
+      "size_bytes": 2790
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/modeling_wuerstchen_diffnext.py",
+      "size_bytes": 10679
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/modeling_wuerstchen_prior.py",
+      "size_bytes": 4699
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/pipeline_wuerstchen.py",
+      "size_bytes": 21220
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/pipeline_wuerstchen_combined.py",
+      "size_bytes": 16877
+    },
+    {
+      "path": "src/diffusers/pipelines/deprecated/wuerstchen/pipeline_wuerstchen_prior.py",
+      "size_bytes": 24579
+    },
+    {
+      "path": "src/diffusers/pipelines/diffusion_gemma/__init__.py",
+      "size_bytes": 1523
+    },
+    {
+      "path": "src/diffusers/pipelines/diffusion_gemma/pipeline_diffusion_gemma.py",
+      "size_bytes": 25372
+    },
+    {
+      "path": "src/diffusers/pipelines/diffusion_gemma/pipeline_output.py",
+      "size_bytes": 1266
+    },
+    {
+      "path": "src/diffusers/pipelines/dit/__init__.py",
+      "size_bytes": 427
+    },
+    {
+      "path": "src/diffusers/pipelines/dit/pipeline_dit.py",
+      "size_bytes": 10643
+    },
+    {
+      "path": "src/diffusers/pipelines/dreamlite/__init__.py",
+      "size_bytes": 1338
+    },
+    {
+      "path": "src/diffusers/pipelines/dreamlite/pipeline_dreamlite.py",
+      "size_bytes": 27189
+    },
+    {
+      "path": "src/diffusers/pipelines/dreamlite/pipeline_dreamlite_mobile.py",
+      "size_bytes": 25881
+    },
+    {
+      "path": "src/diffusers/pipelines/dreamlite/pipeline_output.py",
+      "size_bytes": 1238
+    },
+    {
+      "path": "src/diffusers/pipelines/easyanimate/__init__.py",
+      "size_bytes": 1686
+    },
+    {
+      "path": "src/diffusers/pipelines/easyanimate/pipeline_easyanimate.py",
+      "size_bytes": 36482
+    },
+    {
+      "path": "src/diffusers/pipelines/easyanimate/pipeline_easyanimate_control.py",
+      "size_bytes": 47698
+    },
+    {
+      "path": "src/diffusers/pipelines/easyanimate/pipeline_easyanimate_inpaint.py",
+      "size_bytes": 60084
+    },
+    {
+      "path": "src/diffusers/pipelines/easyanimate/pipeline_output.py",
+      "size_bytes": 641
+    },
+    {
+      "path": "src/diffusers/pipelines/ernie_image/__init__.py",
+      "size_bytes": 1351
+    },
+    {
+      "path": "src/diffusers/pipelines/ernie_image/pipeline_ernie_image.py",
+      "size_bytes": 16929
+    },
+    {
+      "path": "src/diffusers/pipelines/ernie_image/pipeline_output.py",
+      "size_bytes": 1207
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/__init__.py",
+      "size_bytes": 3518
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/modeling_flux.py",
+      "size_bytes": 1564
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux.py",
+      "size_bytes": 47710
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_control.py",
+      "size_bytes": 40267
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_control_img2img.py",
+      "size_bytes": 45487
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_control_inpaint.py",
+      "size_bytes": 53583
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_controlnet.py",
+      "size_bytes": 60660
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_controlnet_image_to_image.py",
+      "size_bytes": 47814
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_controlnet_inpainting.py",
+      "size_bytes": 56677
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_fill.py",
+      "size_bytes": 49214
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_img2img.py",
+      "size_bytes": 53366
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_inpaint.py",
+      "size_bytes": 62050
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_kontext.py",
+      "size_bytes": 55101
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_kontext_inpaint.py",
+      "size_bytes": 71677
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_flux_prior_redux.py",
+      "size_bytes": 22987
+    },
+    {
+      "path": "src/diffusers/pipelines/flux/pipeline_output.py",
+      "size_bytes": 1284
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/__init__.py",
+      "size_bytes": 1951
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/image_processor.py",
+      "size_bytes": 7159
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/pipeline_flux2.py",
+      "size_bytes": 45206
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/pipeline_flux2_klein.py",
+      "size_bytes": 42308
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/pipeline_flux2_klein_inpaint.py",
+      "size_bytes": 59832
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/pipeline_flux2_klein_kv.py",
+      "size_bytes": 37751
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/pipeline_output.py",
+      "size_bytes": 765
+    },
+    {
+      "path": "src/diffusers/pipelines/flux2/system_messages.py",
+      "size_bytes": 1937
+    },
+    {
+      "path": "src/diffusers/pipelines/free_init_utils.py",
+      "size_bytes": 7847
+    },
+    {
+      "path": "src/diffusers/pipelines/free_noise_utils.py",
+      "size_bytes": 30193
+    },
+    {
+      "path": "src/diffusers/pipelines/glm_image/__init__.py",
+      "size_bytes": 2026
+    },
+    {
+      "path": "src/diffusers/pipelines/glm_image/pipeline_glm_image.py",
+      "size_bytes": 51137
+    },
+    {
+      "path": "src/diffusers/pipelines/glm_image/pipeline_output.py",
+      "size_bytes": 577
+    },
+    {
+      "path": "src/diffusers/pipelines/helios/__init__.py",
+      "size_bytes": 1476
+    },
+    {
+      "path": "src/diffusers/pipelines/helios/pipeline_helios.py",
+      "size_bytes": 46320
+    },
+    {
+      "path": "src/diffusers/pipelines/helios/pipeline_helios_pyramid.py",
+      "size_bytes": 55570
+    },
+    {
+      "path": "src/diffusers/pipelines/helios/pipeline_output.py",
+      "size_bytes": 631
+    },
+    {
+      "path": "src/diffusers/pipelines/hidream_image/__init__.py",
+      "size_bytes": 1546
+    },
+    {
+      "path": "src/diffusers/pipelines/hidream_image/pipeline_hidream_image.py",
+      "size_bytes": 51554
+    },
+    {
+      "path": "src/diffusers/pipelines/hidream_image/pipeline_output.py",
+      "size_bytes": 1226
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_image/__init__.py",
+      "size_bytes": 1528
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_image/pipeline_hunyuanimage.py",
+      "size_bytes": 43753
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_image/pipeline_hunyuanimage_refiner.py",
+      "size_bytes": 38262
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_image/pipeline_output.py",
+      "size_bytes": 584
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/__init__.py",
+      "size_bytes": 1932
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/pipeline_hunyuan_skyreels_image2video.py",
+      "size_bytes": 38864
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/pipeline_hunyuan_video.py",
+      "size_bytes": 35467
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/pipeline_hunyuan_video_framepack.py",
+      "size_bytes": 54310
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/pipeline_hunyuan_video_image2video.py",
+      "size_bytes": 47006
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video/pipeline_output.py",
+      "size_bytes": 1420
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video1_5/__init__.py",
+      "size_bytes": 1570
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video1_5/image_processor.py",
+      "size_bytes": 4188
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video1_5/pipeline_hunyuan_video1_5.py",
+      "size_bytes": 40042
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video1_5/pipeline_hunyuan_video1_5_image2video.py",
+      "size_bytes": 45598
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuan_video1_5/pipeline_output.py",
+      "size_bytes": 648
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuandit/__init__.py",
+      "size_bytes": 1350
+    },
+    {
+      "path": "src/diffusers/pipelines/hunyuandit/pipeline_hunyuandit.py",
+      "size_bytes": 44518
+    },
+    {
+      "path": "src/diffusers/pipelines/ideogram4/__init__.py",
+      "size_bytes": 1617
+    },
+    {
+      "path": "src/diffusers/pipelines/ideogram4/pipeline_ideogram4.py",
+      "size_bytes": 36261
+    },
+    {
+      "path": "src/diffusers/pipelines/ideogram4/pipeline_output.py",
+      "size_bytes": 1141
+    },
+    {
+      "path": "src/diffusers/pipelines/ideogram4/prompt_enhancer.py",
+      "size_bytes": 15225
+    },
+    {
+      "path": "src/diffusers/pipelines/joyimage/__init__.py",
+      "size_bytes": 1723
+    },
+    {
+      "path": "src/diffusers/pipelines/joyimage/image_processor.py",
+      "size_bytes": 5099
+    },
+    {
+      "path": "src/diffusers/pipelines/joyimage/pipeline_joyimage_edit.py",
+      "size_bytes": 39905
+    },
+    {
+      "path": "src/diffusers/pipelines/joyimage/pipeline_joyimage_edit_plus.py",
+      "size_bytes": 36377
+    },
+    {
+      "path": "src/diffusers/pipelines/joyimage/pipeline_output.py",
+      "size_bytes": 549
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/__init__.py",
+      "size_bytes": 2378
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/pipeline_kandinsky.py",
+      "size_bytes": 18243
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/pipeline_kandinsky_combined.py",
+      "size_bytes": 40224
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/pipeline_kandinsky_img2img.py",
+      "size_bytes": 22347
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/pipeline_kandinsky_inpaint.py",
+      "size_bytes": 29305
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/pipeline_kandinsky_prior.py",
+      "size_bytes": 24505
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky/text_encoder.py",
+      "size_bytes": 1119
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/__init__.py",
+      "size_bytes": 2866
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2.py",
+      "size_bytes": 14649
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_combined.py",
+      "size_bytes": 46977
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_controlnet.py",
+      "size_bytes": 14277
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_controlnet_img2img.py",
+      "size_bytes": 17166
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_img2img.py",
+      "size_bytes": 17483
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_inpainting.py",
+      "size_bytes": 25516
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior.py",
+      "size_bytes": 26106
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky2_2/pipeline_kandinsky2_2_prior_emb2emb.py",
+      "size_bytes": 25947
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky3/__init__.py",
+      "size_bytes": 1510
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky3/convert_kandinsky3_unet.py",
+      "size_bytes": 3371
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky3/pipeline_kandinsky3.py",
+      "size_bytes": 27821
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky3/pipeline_kandinsky3_img2img.py",
+      "size_bytes": 31043
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/__init__.py",
+      "size_bytes": 1786
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/pipeline_kandinsky.py",
+      "size_bytes": 42498
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/pipeline_kandinsky_i2i.py",
+      "size_bytes": 37527
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/pipeline_kandinsky_i2v.py",
+      "size_bytes": 45506
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/pipeline_kandinsky_t2i.py",
+      "size_bytes": 34879
+    },
+    {
+      "path": "src/diffusers/pipelines/kandinsky5/pipeline_output.py",
+      "size_bytes": 1145
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/__init__.py",
+      "size_bytes": 1845
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/pipeline_kolors.py",
+      "size_bytes": 56572
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/pipeline_kolors_img2img.py",
+      "size_bytes": 66624
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/pipeline_output.py",
+      "size_bytes": 573
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/text_encoder.py",
+      "size_bytes": 35939
+    },
+    {
+      "path": "src/diffusers/pipelines/kolors/tokenizer.py",
+      "size_bytes": 14036
+    },
+    {
+      "path": "src/diffusers/pipelines/krea2/__init__.py",
+      "size_bytes": 1451
+    },
+    {
+      "path": "src/diffusers/pipelines/krea2/pipeline_krea2.py",
+      "size_bytes": 36059
+    },
+    {
+      "path": "src/diffusers/pipelines/krea2/pipeline_output.py",
+      "size_bytes": 1128
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_consistency_models/__init__.py",
+      "size_bytes": 1610
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_consistency_models/pipeline_latent_consistency_img2img.py",
+      "size_bytes": 51143
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_consistency_models/pipeline_latent_consistency_text2img.py",
+      "size_bytes": 47040
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_diffusion/__init__.py",
+      "size_bytes": 1592
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_diffusion/pipeline_latent_diffusion.py",
+      "size_bytes": 33464
+    },
+    {
+      "path": "src/diffusers/pipelines/latent_diffusion/pipeline_latent_diffusion_superresolution.py",
+      "size_bytes": 8334
+    },
+    {
+      "path": "src/diffusers/pipelines/latte/__init__.py",
+      "size_bytes": 1330
+    },
+    {
+      "path": "src/diffusers/pipelines/latte/pipeline_latte.py",
+      "size_bytes": 43612
+    },
+    {
+      "path": "src/diffusers/pipelines/ledits_pp/__init__.py",
+      "size_bytes": 1838
+    },
+    {
+      "path": "src/diffusers/pipelines/ledits_pp/pipeline_leditspp_stable_diffusion.py",
+      "size_bytes": 77681
+    },
+    {
+      "path": "src/diffusers/pipelines/ledits_pp/pipeline_leditspp_stable_diffusion_xl.py",
+      "size_bytes": 89045
+    },
+    {
+      "path": "src/diffusers/pipelines/ledits_pp/pipeline_output.py",
+      "size_bytes": 1559
+    },
+    {
+      "path": "src/diffusers/pipelines/llada2/__init__.py",
+      "size_bytes": 1391
+    },
+    {
+      "path": "src/diffusers/pipelines/llada2/pipeline_llada2.py",
+      "size_bytes": 26632
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_audio_dit/__init__.py",
+      "size_bytes": 1325
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_audio_dit/pipeline_longcat_audio_dit.py",
+      "size_bytes": 15832
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_image/__init__.py",
+      "size_bytes": 1659
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_image/pipeline_longcat_image.py",
+      "size_bytes": 31859
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_image/pipeline_longcat_image_edit.py",
+      "size_bytes": 33862
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_image/pipeline_output.py",
+      "size_bytes": 595
+    },
+    {
+      "path": "src/diffusers/pipelines/longcat_image/system_messages.py",
+      "size_bytes": 19531
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/__init__.py",
+      "size_bytes": 2118
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/modeling_latent_upsampler.py",
+      "size_bytes": 7636
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_ltx.py",
+      "size_bytes": 42179
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_ltx_condition.py",
+      "size_bytes": 64233
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_ltx_i2v_long_multi_prompt.py",
+      "size_bytes": 69296
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_ltx_image2video.py",
+      "size_bytes": 47112
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_ltx_latent_upsample.py",
+      "size_bytes": 14613
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx/pipeline_output.py",
+      "size_bytes": 625
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/__init__.py",
+      "size_bytes": 2736
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/connectors.py",
+      "size_bytes": 22773
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/export_utils.py",
+      "size_bytes": 5622
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/image_processor.py",
+      "size_bytes": 7884
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/latent_upsampler.py",
+      "size_bytes": 12152
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2.py",
+      "size_bytes": 78110
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2_condition.py",
+      "size_bytes": 98237
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2_hdr_lora.py",
+      "size_bytes": 82910
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2_ic_lora.py",
+      "size_bytes": 120075
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2_image2video.py",
+      "size_bytes": 82529
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_ltx2_latent_upsample.py",
+      "size_bytes": 20415
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/pipeline_output.py",
+      "size_bytes": 716
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/utils.py",
+      "size_bytes": 11112
+    },
+    {
+      "path": "src/diffusers/pipelines/ltx2/vocoder.py",
+      "size_bytes": 24298
+    },
+    {
+      "path": "src/diffusers/pipelines/lucy/__init__.py",
+      "size_bytes": 1342
+    },
+    {
+      "path": "src/diffusers/pipelines/lucy/pipeline_lucy_edit.py",
+      "size_bytes": 34467
+    },
+    {
+      "path": "src/diffusers/pipelines/lucy/pipeline_output.py",
+      "size_bytes": 627
+    },
+    {
+      "path": "src/diffusers/pipelines/lumina/__init__.py",
+      "size_bytes": 1384
+    },
+    {
+      "path": "src/diffusers/pipelines/lumina/pipeline_lumina.py",
+      "size_bytes": 45954
+    },
+    {
+      "path": "src/diffusers/pipelines/lumina2/__init__.py",
+      "size_bytes": 1390
+    },
+    {
+      "path": "src/diffusers/pipelines/lumina2/pipeline_lumina2.py",
+      "size_bytes": 37804
+    },
+    {
+      "path": "src/diffusers/pipelines/marigold/__init__.py",
+      "size_bytes": 1978
+    },
+    {
+      "path": "src/diffusers/pipelines/marigold/marigold_image_processing.py",
+      "size_bytes": 31732
+    },
+    {
+      "path": "src/diffusers/pipelines/marigold/pipeline_marigold_depth.py",
+      "size_bytes": 41828
+    },
+    {
+      "path": "src/diffusers/pipelines/marigold/pipeline_marigold_intrinsics.py",
+      "size_bytes": 36400
+    },
+    {
+      "path": "src/diffusers/pipelines/marigold/pipeline_marigold_normals.py",
+      "size_bytes": 35301
+    },
+    {
+      "path": "src/diffusers/pipelines/mochi/__init__.py",
+      "size_bytes": 1330
+    },
+    {
+      "path": "src/diffusers/pipelines/mochi/pipeline_mochi.py",
+      "size_bytes": 35465
+    },
+    {
+      "path": "src/diffusers/pipelines/mochi/pipeline_output.py",
+      "size_bytes": 629
+    },
+    {
+      "path": "src/diffusers/pipelines/motif_video/__init__.py",
+      "size_bytes": 1664
+    },
+    {
+      "path": "src/diffusers/pipelines/motif_video/pipeline_motif_video.py",
+      "size_bytes": 36909
+    },
+    {
+      "path": "src/diffusers/pipelines/motif_video/pipeline_motif_video_image2video.py",
+      "size_bytes": 41491
+    },
+    {
+      "path": "src/diffusers/pipelines/motif_video/pipeline_output.py",
+      "size_bytes": 640
+    },
+    {
+      "path": "src/diffusers/pipelines/nucleusmoe_image/__init__.py",
+      "size_bytes": 1563
+    },
+    {
+      "path": "src/diffusers/pipelines/nucleusmoe_image/pipeline_nucleusmoe_image.py",
+      "size_bytes": 28780
+    },
+    {
+      "path": "src/diffusers/pipelines/nucleusmoe_image/pipeline_output.py",
+      "size_bytes": 592
+    },
+    {
+      "path": "src/diffusers/pipelines/omnigen/__init__.py",
+      "size_bytes": 1342
+    },
+    {
+      "path": "src/diffusers/pipelines/omnigen/pipeline_omnigen.py",
+      "size_bytes": 23095
+    },
+    {
+      "path": "src/diffusers/pipelines/omnigen/processor_omnigen.py",
+      "size_bytes": 14492
+    },
+    {
+      "path": "src/diffusers/pipelines/onnx_utils.py",
+      "size_bytes": 8966
+    },
+    {
+      "path": "src/diffusers/pipelines/ovis_image/__init__.py",
+      "size_bytes": 1483
+    },
+    {
+      "path": "src/diffusers/pipelines/ovis_image/pipeline_output.py",
+      "size_bytes": 1235
+    },
+    {
+      "path": "src/diffusers/pipelines/ovis_image/pipeline_ovis_image.py",
+      "size_bytes": 33839
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/__init__.py",
+      "size_bytes": 4042
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pag_utils.py",
+      "size_bytes": 10407
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_controlnet_sd.py",
+      "size_bytes": 69695
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_controlnet_sd_inpaint.py",
+      "size_bytes": 80549
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_controlnet_sd_xl.py",
+      "size_bytes": 84752
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_controlnet_sd_xl_img2img.py",
+      "size_bytes": 89553
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_hunyuandit.py",
+      "size_bytes": 47750
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_kolors.py",
+      "size_bytes": 60325
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_pixart_sigma.py",
+      "size_bytes": 42981
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sana.py",
+      "size_bytes": 45463
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd.py",
+      "size_bytes": 56681
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_3.py",
+      "size_bytes": 50630
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_3_img2img.py",
+      "size_bytes": 55602
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_animatediff.py",
+      "size_bytes": 44628
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_img2img.py",
+      "size_bytes": 59019
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_inpaint.py",
+      "size_bytes": 74022
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_xl.py",
+      "size_bytes": 71618
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_xl_img2img.py",
+      "size_bytes": 83028
+    },
+    {
+      "path": "src/diffusers/pipelines/pag/pipeline_pag_sd_xl_inpaint.py",
+      "size_bytes": 95389
+    },
+    {
+      "path": "src/diffusers/pipelines/pipeline_loading_utils.py",
+      "size_bytes": 51098
+    },
+    {
+      "path": "src/diffusers/pipelines/pipeline_utils.py",
+      "size_bytes": 121118
+    },
+    {
+      "path": "src/diffusers/pipelines/pixart_alpha/__init__.py",
+      "size_bytes": 1650
+    },
+    {
+      "path": "src/diffusers/pipelines/pixart_alpha/pipeline_pixart_alpha.py",
+      "size_bytes": 46291
+    },
+    {
+      "path": "src/diffusers/pipelines/pixart_alpha/pipeline_pixart_sigma.py",
+      "size_bytes": 43522
+    },
+    {
+      "path": "src/diffusers/pipelines/prx/__init__.py",
+      "size_bytes": 2851
+    },
+    {
+      "path": "src/diffusers/pipelines/prx/pipeline_output.py",
+      "size_bytes": 1207
+    },
+    {
+      "path": "src/diffusers/pipelines/prx/pipeline_prx.py",
+      "size_bytes": 36528
+    },
+    {
+      "path": "src/diffusers/pipelines/prx/pipeline_prx_pixel.py",
+      "size_bytes": 31466
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/__init__.py",
+      "size_bytes": 2967
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_output.py",
+      "size_bytes": 586
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage.py",
+      "size_bytes": 35811
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_controlnet.py",
+      "size_bytes": 48207
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_controlnet_inpaint.py",
+      "size_bytes": 44933
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_edit.py",
+      "size_bytes": 42583
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_edit_inpaint.py",
+      "size_bytes": 54433
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_edit_plus.py",
+      "size_bytes": 44856
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_img2img.py",
+      "size_bytes": 42177
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_inpaint.py",
+      "size_bytes": 51228
+    },
+    {
+      "path": "src/diffusers/pipelines/qwenimage/pipeline_qwenimage_layered.py",
+      "size_bytes": 46289
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/__init__.py",
+      "size_bytes": 1772
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/pipeline_output.py",
+      "size_bytes": 569
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/pipeline_sana.py",
+      "size_bytes": 47042
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/pipeline_sana_controlnet.py",
+      "size_bytes": 51619
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/pipeline_sana_sprint.py",
+      "size_bytes": 40953
+    },
+    {
+      "path": "src/diffusers/pipelines/sana/pipeline_sana_sprint_img2img.py",
+      "size_bytes": 45901
+    },
+    {
+      "path": "src/diffusers/pipelines/sana_video/__init__.py",
+      "size_bytes": 1498
+    },
+    {
+      "path": "src/diffusers/pipelines/sana_video/pipeline_output.py",
+      "size_bytes": 631
+    },
+    {
+      "path": "src/diffusers/pipelines/sana_video/pipeline_sana_video.py",
+      "size_bytes": 50628
+    },
+    {
+      "path": "src/diffusers/pipelines/sana_video/pipeline_sana_video_i2v.py",
+      "size_bytes": 54257
+    },
+    {
+      "path": "src/diffusers/pipelines/shap_e/__init__.py",
+      "size_bytes": 2164
+    },
+    {
+      "path": "src/diffusers/pipelines/shap_e/camera.py",
+      "size_bytes": 5063
+    },
+    {
+      "path": "src/diffusers/pipelines/shap_e/pipeline_shap_e.py",
+      "size_bytes": 13692
+    },
+    {
+      "path": "src/diffusers/pipelines/shap_e/pipeline_shap_e_img2img.py",
+      "size_bytes": 13480
+    },
+    {
+      "path": "src/diffusers/pipelines/shap_e/renderer.py",
+      "size_bytes": 40158
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/__init__.py",
+      "size_bytes": 2218
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_output.py",
+      "size_bytes": 639
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_skyreels_v2.py",
+      "size_bytes": 28350
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_skyreels_v2_diffusion_forcing.py",
+      "size_bytes": 49209
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_skyreels_v2_diffusion_forcing_i2v.py",
+      "size_bytes": 53601
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_skyreels_v2_diffusion_forcing_v2v.py",
+      "size_bytes": 53063
+    },
+    {
+      "path": "src/diffusers/pipelines/skyreels_v2/pipeline_skyreels_v2_i2v.py",
+      "size_bytes": 35350
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_audio/__init__.py",
+      "size_bytes": 1611
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_audio/modeling_stable_audio.py",
+      "size_bytes": 6204
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_audio/pipeline_stable_audio.py",
+      "size_bytes": 35476
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_cascade/__init__.py",
+      "size_bytes": 1722
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_cascade/pipeline_stable_cascade.py",
+      "size_bytes": 26669
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_cascade/pipeline_stable_cascade_combined.py",
+      "size_bytes": 18423
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_cascade/pipeline_stable_cascade_prior.py",
+      "size_bytes": 32706
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/__init__.py",
+      "size_bytes": 7210
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/clip_image_project_model.py",
+      "size_bytes": 1123
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/convert_from_ckpt.py",
+      "size_bytes": 83521
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_onnx_stable_diffusion.py",
+      "size_bytes": 24838
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_onnx_stable_diffusion_img2img.py",
+      "size_bytes": 28982
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_onnx_stable_diffusion_inpaint.py",
+      "size_bytes": 29608
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_onnx_stable_diffusion_upscale.py",
+      "size_bytes": 28421
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_output.py",
+      "size_bytes": 784
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py",
+      "size_bytes": 56824
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_depth2img.py",
+      "size_bytes": 45290
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_image_variation.py",
+      "size_bytes": 23104
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_img2img.py",
+      "size_bytes": 60637
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint.py",
+      "size_bytes": 71609
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_instruct_pix2pix.py",
+      "size_bytes": 47126
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_latent_upscale.py",
+      "size_bytes": 32459
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_upscale.py",
+      "size_bytes": 40453
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_unclip.py",
+      "size_bytes": 46389
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/pipeline_stable_unclip_img2img.py",
+      "size_bytes": 41055
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/safety_checker.py",
+      "size_bytes": 6055
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion/stable_unclip_image_normalizer.py",
+      "size_bytes": 1897
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_3/__init__.py",
+      "size_bytes": 1952
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_3/pipeline_output.py",
+      "size_bytes": 593
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_3/pipeline_stable_diffusion_3.py",
+      "size_bytes": 58125
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_3/pipeline_stable_diffusion_3_img2img.py",
+      "size_bytes": 60321
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_3/pipeline_stable_diffusion_3_inpaint.py",
+      "size_bytes": 71306
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/__init__.py",
+      "size_bytes": 2195
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/pipeline_output.py",
+      "size_bytes": 594
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py",
+      "size_bytes": 69311
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_img2img.py",
+      "size_bytes": 79855
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py",
+      "size_bytes": 92193
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_instruct_pix2pix.py",
+      "size_bytes": 52519
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_diffusion_xl/watermark.py",
+      "size_bytes": 1500
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_video_diffusion/__init__.py",
+      "size_bytes": 1609
+    },
+    {
+      "path": "src/diffusers/pipelines/stable_video_diffusion/pipeline_stable_video_diffusion.py",
+      "size_bytes": 33401
+    },
+    {
+      "path": "src/diffusers/pipelines/t2i_adapter/__init__.py",
+      "size_bytes": 1603
+    },
+    {
+      "path": "src/diffusers/pipelines/t2i_adapter/pipeline_stable_diffusion_adapter.py",
+      "size_bytes": 48699
+    },
+    {
+      "path": "src/diffusers/pipelines/t2i_adapter/pipeline_stable_diffusion_xl_adapter.py",
+      "size_bytes": 70259
+    },
+    {
+      "path": "src/diffusers/pipelines/transformers_loading_utils.py",
+      "size_bytes": 5563
+    },
+    {
+      "path": "src/diffusers/pipelines/visualcloze/__init__.py",
+      "size_bytes": 1554
+    },
+    {
+      "path": "src/diffusers/pipelines/visualcloze/pipeline_visualcloze_combined.py",
+      "size_bytes": 24333
+    },
+    {
+      "path": "src/diffusers/pipelines/visualcloze/pipeline_visualcloze_generation.py",
+      "size_bytes": 44948
+    },
+    {
+      "path": "src/diffusers/pipelines/visualcloze/visualcloze_utils.py",
+      "size_bytes": 11037
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/__init__.py",
+      "size_bytes": 1862
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/image_processor.py",
+      "size_bytes": 8518
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_output.py",
+      "size_bytes": 625
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_wan.py",
+      "size_bytes": 32718
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_wan_animate.py",
+      "size_bytes": 60074
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_wan_i2v.py",
+      "size_bytes": 41297
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_wan_vace.py",
+      "size_bytes": 53427
+    },
+    {
+      "path": "src/diffusers/pipelines/wan/pipeline_wan_video2video.py",
+      "size_bytes": 35138
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/__init__.py",
+      "size_bytes": 2245
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_output.py",
+      "size_bytes": 1226
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image.py",
+      "size_bytes": 27320
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image_controlnet.py",
+      "size_bytes": 33831
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image_controlnet_inpaint.py",
+      "size_bytes": 35835
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image_img2img.py",
+      "size_bytes": 33440
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image_inpaint.py",
+      "size_bytes": 44061
+    },
+    {
+      "path": "src/diffusers/pipelines/z_image/pipeline_z_image_omni.py",
+      "size_bytes": 34860
+    },
+    {
+      "path": "src/diffusers/quantizers/__init__.py",
+      "size_bytes": 762
+    },
+    {
+      "path": "src/diffusers/quantizers/auto.py",
+      "size_bytes": 7314
+    },
+    {
+      "path": "src/diffusers/quantizers/autoround/__init__.py",
+      "size_bytes": 53
+    },
+    {
+      "path": "src/diffusers/quantizers/autoround/autoround_quantizer.py",
+      "size_bytes": 5048
+    },
+    {
+      "path": "src/diffusers/quantizers/base.py",
+      "size_bytes": 11198
+    },
+    {
+      "path": "src/diffusers/quantizers/bitsandbytes/__init__.py",
+      "size_bytes": 172
+    },
+    {
+      "path": "src/diffusers/quantizers/bitsandbytes/bnb_quantizer.py",
+      "size_bytes": 26464
+    },
+    {
+      "path": "src/diffusers/quantizers/bitsandbytes/utils.py",
+      "size_bytes": 13977
+    },
+    {
+      "path": "src/diffusers/quantizers/gguf/__init__.py",
+      "size_bytes": 43
+    },
+    {
+      "path": "src/diffusers/quantizers/gguf/gguf_quantizer.py",
+      "size_bytes": 7374
+    },
+    {
+      "path": "src/diffusers/quantizers/gguf/utils.py",
+      "size_bytes": 23165
+    },
+    {
+      "path": "src/diffusers/quantizers/modelopt/__init__.py",
+      "size_bytes": 57
+    },
+    {
+      "path": "src/diffusers/quantizers/modelopt/modelopt_quantizer.py",
+      "size_bytes": 7423
+    },
+    {
+      "path": "src/diffusers/quantizers/nunchaku/__init__.py",
+      "size_bytes": 55
+    },
+    {
+      "path": "src/diffusers/quantizers/nunchaku/nunchaku_quantizer.py",
+      "size_bytes": 3201
+    },
+    {
+      "path": "src/diffusers/quantizers/nunchaku/utils.py",
+      "size_bytes": 12132
+    },
+    {
+      "path": "src/diffusers/quantizers/pipe_quant_config.py",
+      "size_bytes": 9629
+    },
+    {
+      "path": "src/diffusers/quantizers/quantization_config.py",
+      "size_bytes": 42816
+    },
+    {
+      "path": "src/diffusers/quantizers/quanto/__init__.py",
+      "size_bytes": 47
+    },
+    {
+      "path": "src/diffusers/quantizers/quanto/quanto_quantizer.py",
+      "size_bytes": 6678
+    },
+    {
+      "path": "src/diffusers/quantizers/quanto/utils.py",
+      "size_bytes": 2508
+    },
+    {
+      "path": "src/diffusers/quantizers/torchao/__init__.py",
+      "size_bytes": 677
+    },
+    {
+      "path": "src/diffusers/quantizers/torchao/torchao_quantizer.py",
+      "size_bytes": 19900
+    },
+    {
+      "path": "src/diffusers/schedulers/__init__.py",
+      "size_bytes": 10498
+    },
+    {
+      "path": "src/diffusers/schedulers/deprecated/__init__.py",
+      "size_bytes": 1399
+    },
+    {
+      "path": "src/diffusers/schedulers/deprecated/scheduling_karras_ve.py",
+      "size_bytes": 9879
+    },
+    {
+      "path": "src/diffusers/schedulers/deprecated/scheduling_sde_vp.py",
+      "size_bytes": 4371
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_amused.py",
+      "size_bytes": 9947
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_block_refinement.py",
+      "size_bytes": 23580
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_consistency_decoder.py",
+      "size_bytes": 8445
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_consistency_models.py",
+      "size_bytes": 22144
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_cosine_dpmsolver_multistep.py",
+      "size_bytes": 32080
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddim.py",
+      "size_bytes": 28684
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddim_cogvideox.py",
+      "size_bytes": 23722
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddim_inverse.py",
+      "size_bytes": 18041
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddim_parallel.py",
+      "size_bytes": 34501
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddpm.py",
+      "size_bytes": 30423
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddpm_parallel.py",
+      "size_bytes": 35734
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ddpm_wuerstchen.py",
+      "size_bytes": 9094
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_deis_multistep.py",
+      "size_bytes": 46897
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_discrete_ddim.py",
+      "size_bytes": 15560
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_dpm_cogvideox.py",
+      "size_bytes": 28081
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_dpmsolver_multistep.py",
+      "size_bytes": 63109
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_dpmsolver_multistep_inverse.py",
+      "size_bytes": 54819
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_dpmsolver_sde.py",
+      "size_bytes": 35675
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_dpmsolver_singlestep.py",
+      "size_bytes": 61588
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_edm_dpmsolver_multistep.py",
+      "size_bytes": 38566
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_edm_euler.py",
+      "size_bytes": 26045
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_entropy_bound.py",
+      "size_bytes": 8782
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_euler_ancestral_discrete.py",
+      "size_bytes": 23828
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_euler_discrete.py",
+      "size_bytes": 42710
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_flow_map_euler_discrete.py",
+      "size_bytes": 16484
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_flow_match_euler_discrete.py",
+      "size_bytes": 27485
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_flow_match_heun_discrete.py",
+      "size_bytes": 13541
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_flow_match_lcm.py",
+      "size_bytes": 27380
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_helios.py",
+      "size_bytes": 33750
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_helios_dmd.py",
+      "size_bytes": 13504
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_heun_discrete.py",
+      "size_bytes": 32629
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ipndm.py",
+      "size_bytes": 10973
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_k_dpm_2_ancestral_discrete.py",
+      "size_bytes": 32192
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_k_dpm_2_discrete.py",
+      "size_bytes": 31810
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_lcm.py",
+      "size_bytes": 37018
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_lms_discrete.py",
+      "size_bytes": 29876
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_ltx_euler_ancestral_rf.py",
+      "size_bytes": 16839
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_pndm.py",
+      "size_bytes": 23409
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_repaint.py",
+      "size_bytes": 18034
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_sasolver.py",
+      "size_bytes": 65167
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_scm.py",
+      "size_bytes": 13477
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_sde_ve.py",
+      "size_bytes": 14809
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_tcd.py",
+      "size_bytes": 40037
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_unclip.py",
+      "size_bytes": 17316
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_unipc_multistep.py",
+      "size_bytes": 57542
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_utils.py",
+      "size_bytes": 8816
+    },
+    {
+      "path": "src/diffusers/schedulers/scheduling_vq_diffusion.py",
+      "size_bytes": 23360
+    },
+    {
+      "path": "src/diffusers/training_utils.py",
+      "size_bytes": 39634
+    },
+    {
+      "path": "src/diffusers/utils/__init__.py",
+      "size_bytes": 5468
+    },
+    {
+      "path": "src/diffusers/utils/accelerate_utils.py",
+      "size_bytes": 1887
+    },
+    {
+      "path": "src/diffusers/utils/constants.py",
+      "size_bytes": 3973
+    },
+    {
+      "path": "src/diffusers/utils/deprecation_utils.py",
+      "size_bytes": 4217
+    },
+    {
+      "path": "src/diffusers/utils/distributed_utils.py",
+      "size_bytes": 1081
+    },
+    {
+      "path": "src/diffusers/utils/doc_utils.py",
+      "size_bytes": 1387
+    },
+    {
+      "path": "src/diffusers/utils/dummy_auto_round_objects.py",
+      "size_bytes": 533
+    },
+    {
+      "path": "src/diffusers/utils/dummy_bitsandbytes_objects.py",
+      "size_bytes": 544
+    },
+    {
+      "path": "src/diffusers/utils/dummy_gguf_objects.py",
+      "size_bytes": 516
+    },
+    {
+      "path": "src/diffusers/utils/dummy_note_seq_objects.py",
+      "size_bytes": 523
+    },
+    {
+      "path": "src/diffusers/utils/dummy_nunchaku_lite_objects.py",
+      "size_bytes": 528
+    },
+    {
+      "path": "src/diffusers/utils/dummy_nvidia_modelopt_objects.py",
+      "size_bytes": 558
+    },
+    {
+      "path": "src/diffusers/utils/dummy_onnx_objects.py",
+      "size_bytes": 510
+    },
+    {
+      "path": "src/diffusers/utils/dummy_optimum_quanto_objects.py",
+      "size_bytes": 546
+    },
+    {
+      "path": "src/diffusers/utils/dummy_pt_objects.py",
+      "size_bytes": 93962
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_librosa_objects.py",
+      "size_bytes": 980
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_scipy_objects.py",
+      "size_bytes": 554
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_torchsde_objects.py",
+      "size_bytes": 1017
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_transformers_and_onnx_objects.py",
+      "size_bytes": 3115
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_transformers_and_opencv_objects.py",
+      "size_bytes": 618
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_transformers_and_sentencepiece_objects.py",
+      "size_bytes": 1684
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torch_and_transformers_objects.py",
+      "size_bytes": 156629
+    },
+    {
+      "path": "src/diffusers/utils/dummy_torchao_objects.py",
+      "size_bytes": 519
+    },
+    {
+      "path": "src/diffusers/utils/dummy_transformers_and_torch_and_note_seq_objects.py",
+      "size_bytes": 638
+    },
+    {
+      "path": "src/diffusers/utils/dynamic_modules_utils.py",
+      "size_bytes": 24841
+    },
+    {
+      "path": "src/diffusers/utils/export_utils.py",
+      "size_bytes": 14503
+    },
+    {
+      "path": "src/diffusers/utils/hub_utils.py",
+      "size_bytes": 26474
+    },
+    {
+      "path": "src/diffusers/utils/import_utils.py",
+      "size_bytes": 35765
+    },
+    {
+      "path": "src/diffusers/utils/loading_utils.py",
+      "size_bytes": 5421
+    },
+    {
+      "path": "src/diffusers/utils/logging.py",
+      "size_bytes": 10526
+    },
+    {
+      "path": "src/diffusers/utils/outputs.py",
+      "size_bytes": 5136
+    },
+    {
+      "path": "src/diffusers/utils/peft_utils.py",
+      "size_bytes": 16540
+    },
+    {
+      "path": "src/diffusers/utils/pil_utils.py",
+      "size_bytes": 2019
+    },
+    {
+      "path": "src/diffusers/utils/remote_utils.py",
+      "size_bytes": 16457
+    },
+    {
+      "path": "src/diffusers/utils/source_code_parsing_utils.py",
+      "size_bytes": 1915
+    },
+    {
+      "path": "src/diffusers/utils/state_dict_utils.py",
+      "size_bytes": 23656
+    },
+    {
+      "path": "src/diffusers/utils/testing_utils.py",
+      "size_bytes": 60608
+    },
+    {
+      "path": "src/diffusers/utils/torch_utils.py",
+      "size_bytes": 15364
+    },
+    {
+      "path": "src/diffusers/utils/typing_utils.py",
+      "size_bytes": 3485
+    },
+    {
+      "path": "src/diffusers/utils/versions.py",
+      "size_bytes": 4418
+    },
+    {
+      "path": "src/diffusers/video_processor.py",
+      "size_bytes": 8533
+    }
+  ]
+}

@@ -216,3 +216,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =========================================================
+# Lab 04 project-specific ignores
+# =========================================================
+
+# External repositories cloned for analysis
+data/repos/*
+!data/repos/.gitkeep
+
+# Generated parser output
+data/output/*
+!data/output/.gitkeep
+
+# Spark Structured Streaming checkpoints
+checkpoints/*
+!checkpoints/.gitkeep
+
+# Jupyter Book build output
+book/_build/
+
+# Spark local runtime files
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# Local database/runtime data
+kafka-data/
+neo4j-data/
+mongodb-data/
+
+# IDE
+.vscode/
+.idea/
