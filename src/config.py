@@ -4,10 +4,10 @@ import os
 KAFKA_BROKER = os.getenv("KAFKA_BROKER", "localhost:9092")
 
 # Topic Names
-TOPIC_NODES = "cpg-nodes"
-TOPIC_EDGES = "cpg-edges"
-TOPIC_METADATA = "diffusers.source.metadata.v1"
-TOPIC_ERRORS = "cpg-errors"
+TOPIC_NODES = "cpg.nodes.v1"
+TOPIC_EDGES = "cpg.edges.v1"
+TOPIC_METADATA = "source.metadata.v1"
+TOPIC_ERRORS = "parser.errors.v1"
 
 # Schema Versions
 SCHEMA_VERSION_NODE = "v1.0"
