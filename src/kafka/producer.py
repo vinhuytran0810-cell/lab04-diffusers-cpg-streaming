@@ -64,14 +64,37 @@ def process_file(filepath, producer):
         producer.send(TOPIC_EDGES, key=e['id'].encode('utf-8'), value=event.to_json())
 
     # 4. Emit Metadata Event
-    meta_event = MetadataEvent(
-        filepath=filepath,
-        repo_name=REPO_NAME,
-        node_count=len(nodes),
-        edge_count=len(edges)
+    import hashlib
+    rel_path = os.path.relpath(filepath, start=os.path.join(os.path.dirname(__file__), '..', '..'))
+    # Standardize path separators for hashing to ensure cross-platform stability
+    normalized_path = rel_path.replace('\\', '/')
+    file_id = hashlib.md5(f"{REPO_NAME}:{normalized_path}".encode('utf-8')).hexdigest()
+    content_hash = hashlib.sha256(cpg_data['content'].encode('utf-8')).hexdigest()
+
+    from src.kafka.schemas import MetadataPayload
+    payload = MetadataPayload(
+        size_bytes=cpg_data['metadata']['size_bytes'],
+        line_count=cpg_data['metadata']['line_count'],
+        node_count=cpg_data['metadata']['node_count'],
+        class_count=cpg_data['metadata']['class_count'],
+        function_count=cpg_data['metadata']['function_count'],
+        import_count=cpg_data['metadata']['import_count'],
+        call_count=cpg_data['metadata']['call_count'],
+        assignment_count=cpg_data['metadata']['assignment_count'],
+        parse_status=cpg_data['metadata']['parse_status'],
+        node_type_counts=cpg_data['metadata']['node_type_counts']
     )
-    # Using filepath as key for metadata so updates to the same file go to the same partition
-    producer.send(TOPIC_METADATA, key=filepath.encode('utf-8'), value=meta_event.to_json())
+
+    meta_event = MetadataEvent(
+        repository=REPO_NAME,
+        commit_hash="abc1234", # Placeholder since we don't have git history here
+        file_id=file_id,
+        file_path=normalized_path,
+        content_hash=content_hash,
+        metadata=payload
+    )
+    # Using file_id as key for metadata as requested by the teammate
+    producer.send(TOPIC_METADATA, key=file_id.encode('utf-8'), value=meta_event.to_json())
 
     print(f"  -> Emitted {len(nodes)} nodes and {len(edges)} edges.")
 
