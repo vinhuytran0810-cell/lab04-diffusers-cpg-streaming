@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "event_time": "2026-07-24T10:00:01Z",
+  "repository": "huggingface/diffusers",
+  "commit_hash": "REPLACE_WITH_REAL_COMMIT_HASH",
+  "content_hash": "REPLACE_WITH_REAL_CONTENT_HASH",
+  "file_id": "file:sample",
+  "file_path": "src/diffusers/sample.py",
+  "id": "edge:ast-child:sample",
+  "edge_type": "AST_CHILD",
+  "source_id": "node:function:sample",
+  "target_id": "node:statement:return-sample",
+  "ordinal": 0,
+  "field": "body",
+  "child_index": 0
+}

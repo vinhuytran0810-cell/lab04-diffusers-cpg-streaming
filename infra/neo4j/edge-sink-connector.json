@@ -1,0 +1,26 @@
+{
+  "name": "diffusers-cpg-edge-sink",
+  "config": {
+    "connector.class": "org.neo4j.connectors.kafka.sink.Neo4jConnector",
+    "tasks.max": "1",
+    "topics": "diffusers.cpg.edges.v1",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "neo4j.uri": "neo4j://neo4j:7687",
+    "neo4j.database": "neo4j",
+    "neo4j.authentication.type": "BASIC",
+    "neo4j.authentication.basic.username": "neo4j",
+    "neo4j.authentication.basic.password": "CHANGE_ME",
+    "neo4j.cypher.topic.diffusers.cpg.edges.v1": "WITH __value AS e MERGE (source:CPGNode {id: e.source_id}) ON CREATE SET source.placeholder = true, source.created_at = datetime() MERGE (target:CPGNode {id: e.target_id}) ON CREATE SET target.placeholder = true, target.created_at = datetime() MERGE (source)-[r:$(e.edge_type) {id: e.id}]->(target) ON CREATE SET r.created_at = datetime() SET r += e, r.updated_at = datetime()",
+    "neo4j.cypher.bind-header-as": "",
+    "neo4j.cypher.bind-key-as": "__key",
+    "neo4j.cypher.bind-value-as": "__value",
+    "neo4j.cypher.bind-value-as-event": "false",
+    "neo4j.batch-size": "100",
+    "neo4j.eos-offset-label": "KafkaEdgeSinkOffset",
+    "errors.tolerance": "none",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true"
+  }
+}
