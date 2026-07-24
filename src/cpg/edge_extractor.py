@@ -120,7 +120,34 @@ def extract_cpg(filepath):
             'variable': dfg['variable']
         })
 
+    # Compute metadata stats
+    node_type_counts = {}
+    for n in nodes:
+        t = n['type']
+        node_type_counts[t] = node_type_counts.get(t, 0) + 1
+
+    class_count = node_type_counts.get('ClassDef', 0)
+    function_count = node_type_counts.get('FunctionDef', 0) + node_type_counts.get('AsyncFunctionDef', 0)
+    import_count = node_type_counts.get('Import', 0) + node_type_counts.get('ImportFrom', 0)
+    call_count = node_type_counts.get('Call', 0)
+    assignment_count = node_type_counts.get('Assign', 0) + node_type_counts.get('AnnAssign', 0) + node_type_counts.get('AugAssign', 0)
+
+    metadata = {
+        'size_bytes': len(source.encode('utf-8')),
+        'line_count': len(source.splitlines()),
+        'node_count': len(nodes),
+        'class_count': class_count,
+        'function_count': function_count,
+        'import_count': import_count,
+        'call_count': call_count,
+        'assignment_count': assignment_count,
+        'parse_status': 'SUCCESS',
+        'node_type_counts': node_type_counts
+    }
+
     return {
         'nodes': nodes,
-        'edges': edges
+        'edges': edges,
+        'metadata': metadata,
+        'content': source
     }
