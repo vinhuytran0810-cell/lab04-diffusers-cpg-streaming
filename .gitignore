@@ -250,3 +250,6 @@ mongodb-data/
 # IDE
 .vscode/
 .idea/
+
+# Kafka Connect plugins
+infra/connect/plugins/*.jar

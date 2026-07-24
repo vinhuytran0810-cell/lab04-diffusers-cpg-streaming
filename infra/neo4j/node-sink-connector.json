@@ -1,0 +1,26 @@
+{
+    "name":  "diffusers-cpg-node-sink",
+    "config":  {
+                   "connector.class":  "org.neo4j.connectors.kafka.sink.Neo4jConnector",
+                   "tasks.max":  "1",
+                   "topics":  "diffusers.cpg.nodes.v1",
+                   "key.converter":  "org.apache.kafka.connect.storage.StringConverter",
+                   "value.converter":  "org.apache.kafka.connect.json.JsonConverter",
+                   "value.converter.schemas.enable":  "false",
+                   "neo4j.uri":  "neo4j://neo4j:7687",
+                   "neo4j.database":  "neo4j",
+                   "neo4j.authentication.type":  "BASIC",
+                   "neo4j.authentication.basic.username":  "neo4j",
+                   "neo4j.authentication.basic.password":  "CHANGE_ME",
+                   "neo4j.cypher.topic.diffusers.cpg.nodes.v1":  "WITH __value AS evt MERGE (n:CPGNode {id: evt.node.id}) ON CREATE SET n.created_at = datetime() SET n.node_type = evt.node.type, n.name = evt.node.name, n.qualified_name = evt.node.qualified_name, n.line = evt.node.line, n.column = evt.node.column, n.end_line = evt.node.end_line, n.end_column = evt.node.end_column, n.parent_id = evt.node.parent_id, n.sequence = evt.node.sequence, n.source = evt.node.source, n.repository = evt.repository, n.commit_hash = evt.commit_hash, n.file_id = evt.file_id, n.file_path = evt.file_path, n.content_hash = evt.content_hash, n.schema_version = evt.schema_version, n.event_type = evt.event_type, n.placeholder = false, n.updated_at = datetime()",
+                   "neo4j.cypher.bind-header-as":  "",
+                   "neo4j.cypher.bind-key-as":  "__key",
+                   "neo4j.cypher.bind-value-as":  "__value",
+                   "neo4j.cypher.bind-value-as-event":  "false",
+                   "neo4j.batch-size":  "100",
+                   "neo4j.eos-offset-label":  "KafkaNodeSinkOffset",
+                   "errors.tolerance":  "none",
+                   "errors.log.enable":  "true",
+                   "errors.log.include.messages":  "true"
+               }
+}
