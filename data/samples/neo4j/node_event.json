@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "event_time": "2026-07-24T10:00:00Z",
+  "repository": "huggingface/diffusers",
+  "commit_hash": "REPLACE_WITH_REAL_COMMIT_HASH",
+  "content_hash": "REPLACE_WITH_REAL_CONTENT_HASH",
+  "file_id": "file:sample",
+  "file_path": "src/diffusers/sample.py",
+  "id": "node:function:sample",
+  "node_type": "Function",
+  "name": "sample_function",
+  "qualified_name": "diffusers.sample.sample_function",
+  "start_line": 1,
+  "start_column": 0,
+  "end_line": 2,
+  "end_column": 15,
+  "ast_path": "body[0]",
+  "code": "def sample_function():"
+}
