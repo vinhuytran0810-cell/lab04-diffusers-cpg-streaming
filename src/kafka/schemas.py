@@ -1,45 +1,72 @@
-import json
-import time
-from dataclasses import dataclass, asdict
-from typing import Optional
+from __future__ import annotations
 
-from src.config import SCHEMA_VERSION_NODE, SCHEMA_VERSION_EDGE, SCHEMA_VERSION_METADATA, SCHEMA_VERSION_ERROR
+import json
+from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
+from typing import Any
+
+from src.config import (
+    SCHEMA_VERSION_EDGE,
+    SCHEMA_VERSION_ERROR,
+    SCHEMA_VERSION_METADATA,
+    SCHEMA_VERSION_NODE,
+)
+
+
+def utc_now() -> str:
+    """Trả về thời gian UTC theo định dạng ISO-8601."""
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
 
 @dataclass
 class NodeEvent:
-    id: str
-    filepath: str
-    type: str
-    lineno: int
-    col_offset: int
+    repository: str
+    commit_hash: str
+    file_id: str
+    file_path: str
+    content_hash: str
+    node: dict[str, Any]
+
     schema_version: str = SCHEMA_VERSION_NODE
-    event_time: int = 0
+    event_type: str = "NODE_UPSERT"
+    event_time: str = ""
 
-    def __post_init__(self):
-        if self.event_time == 0:
-            self.event_time = int(time.time() * 1000)
+    def __post_init__(self) -> None:
+        if not self.event_time:
+            self.event_time = utc_now()
 
-    def to_json(self):
-        return json.dumps(asdict(self))
+    def to_json(self) -> str:
+        return json.dumps(
+            asdict(self),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+
 
 @dataclass
 class EdgeEvent:
-    id: str
-    type: str
-    source_id: str
-    target_id: str
-    variable: Optional[str] = None
+    repository: str
+    commit_hash: str
+    file_id: str
+    file_path: str
+    content_hash: str
+    edge: dict[str, Any]
+
     schema_version: str = SCHEMA_VERSION_EDGE
-    event_time: int = 0
+    event_type: str = "EDGE_UPSERT"
+    event_time: str = ""
 
-    def __post_init__(self):
-        if self.event_time == 0:
-            self.event_time = int(time.time() * 1000)
+    def __post_init__(self) -> None:
+        if not self.event_time:
+            self.event_time = utc_now()
 
-    def to_json(self):
-        return json.dumps(asdict(self))
+    def to_json(self) -> str:
+        return json.dumps(
+            asdict(self),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
 
-from datetime import datetime, timezone
 
 @dataclass
 class MetadataPayload:
@@ -52,7 +79,8 @@ class MetadataPayload:
     call_count: int
     assignment_count: int
     parse_status: str
-    node_type_counts: dict
+    node_type_counts: dict[str, int]
+
 
 @dataclass
 class MetadataEvent:
@@ -62,27 +90,45 @@ class MetadataEvent:
     file_path: str
     content_hash: str
     metadata: MetadataPayload
+
     schema_version: str = SCHEMA_VERSION_METADATA
     event_type: str = "SOURCE_METADATA_UPSERT"
     event_time: str = ""
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         if not self.event_time:
-            self.event_time = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            self.event_time = utc_now()
 
-    def to_json(self):
-        return json.dumps(asdict(self))
+    def to_json(self) -> str:
+        return json.dumps(
+            asdict(self),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+
 
 @dataclass
 class ErrorEvent:
-    filepath: str
+    repository: str
+    commit_hash: str
+    file_path: str
+    error_type: str
     error_message: str
+    content_hash: str | None = None
+    line: int | None = None
+    column: int | None = None
+
     schema_version: str = SCHEMA_VERSION_ERROR
-    event_time: int = 0
+    event_type: str = "PARSER_ERROR"
+    event_time: str = ""
 
-    def __post_init__(self):
-        if self.event_time == 0:
-            self.event_time = int(time.time() * 1000)
+    def __post_init__(self) -> None:
+        if not self.event_time:
+            self.event_time = utc_now()
 
-    def to_json(self):
-        return json.dumps(asdict(self))
+    def to_json(self) -> str:
+        return json.dumps(
+            asdict(self),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
